@@ -1,0 +1,36 @@
+{
+    "intents": [
+        {
+            "name": "swap_token",
+            "description": "User wants to swap cryptocurrency from one type of coin to another.",
+            "details": [
+                {
+                    "name": "chain_id",
+                    "description": "The id of chain according to the name. Here is the mapping of chain name and chain id: Ethereum: 1, BNB Chain: 56, BNB Chain Testnet: 97, Polygon: 137, Moonbeam Testnet: 1287, Cronos: 25, Cronos Testnet: 338, Mumbai Testnet: 80001, Avalanche FUJI Testnet: 43113, Avalanche: 43114, Fantom Testnet: 4002, Fantom: 250, AminoX Testnet: 13370, Arbitrum Goerli Testnet: 421613, Arbitrum One: 42161, Optimism: 10, Optimism Goerli: 420, zkSync Era: 324, zkSync Era Goerli: 280, ZKsync Era Sepolia: 300, Polygon zkEVM Testnet: 1442, Mantle: 5000, Mantle Testnet: 5001, Manta Testnet: 3441005, Manta: 169, Blast Sepolia: 168587773"
+                },
+                {
+                    "name": "from_token",
+                    "description": "The token symbol the user wants to swap from. Here is the mapping of token name and token symbol: Wrapped BNB: WBNB, USDT: USDT, BUSD Token: BUSD, USDC: USDC, DAI: DAI, openANX Token: OAX, CAKE: CAKE, BakeryToken: BAKE, Polkadot Token: DOT, Impossible Finance: IF, Coin98: C98, Impossible Decentralized Incubator Access Token: IDIA, OpenSwap: OSWAP, mOpenSwap: mOSWAP, Project: PRO, mProject: mPRO, mIDIA: mIDIA, Testing: TS, tokenT: TT, JetSwap Token: WINGS, dummy BVR: dBVR, PROJECT: PROJECT, dummy Brickken: BKN"
+                },
+                {
+                    "name": "to_token",
+                    "description": "The token symbol the user wants to swap to. Here is the mapping of token name and token symbol: Wrapped BNB: WBNB, USDT: USDT, BUSD Token: BUSD, USDC: USDC, DAI: DAI, openANX Token: OAX, CAKE: CAKE, BakeryToken: BAKE, Polkadot Token: DOT, Impossible Finance: IF, Coin98: C98, Impossible Decentralized Incubator Access Token: IDIA, OpenSwap: OSWAP, mOpenSwap: mOSWAP, Project: PRO, mProject: mPRO, mIDIA: mIDIA, Testing: TS, tokenT: TT, JetSwap Token: WINGS, dummy BVR: dBVR, PROJECT: PROJECT, dummy Brickken: BKN"
+                },
+                {
+                    "name": "from_amount",
+                    "description": "The amount of the token the user wants to swap."
+                }
+            ]
+        },
+        {
+            "name": "fetch_file_from_storage",
+            "description": "User wants to get file from storage. It could be a document, image, video, song, etc.",
+            "details": [
+                {
+                    "name": "file_description",
+                    "description": "The description of the file the user wants to get. For example, 'an image of Ken'."
+                }
+            ]
+        }
+    ]
+}
